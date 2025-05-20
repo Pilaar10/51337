@@ -1,6 +1,7 @@
+
 # Analizador Léxico y Sintáctico para SubC
 
-Este repositorio contiene la implementación de un analizador léxico y sintáctico para un lenguaje de programación simplificado llamado SubC. Este proyecto fue desarrollado como parte de una tarea académica.
+Este repositorio contiene la implementación de un analizador léxico y sintáctico para un lenguaje de programación simplificado llamado SubC. Este proyecto fue desarrollado como parte de una tarea de SSL.
 
 ## Descripción del Proyecto
 
@@ -11,7 +12,7 @@ El analizador toma como entrada código fuente escrito en el lenguaje SubC y rea
 * **Reporte de Errores:** En caso de encontrar errores léxicos o sintácticos en el código de entrada, el analizador reporta la ubicación (línea y columna) y una descripción del error.
 * **Generación de Tabla de Lexemas-Tokens:** Se genera una tabla que muestra cada lexema reconocido y su tipo de token.
 * **Generación del Árbol de Sintaxis Abstracta (AST):** Se muestra una representación textual del AST construido por el parser.
-* **(Estado Actual de la Interpretación):** [Aquí debes indicar el estado de la fase de interpretación. Por ejemplo:] Actualmente, la fase de interpretación (traducción a JavaScript y ejecución) se encuentra en desarrollo y no está completamente funcional debido a problemas técnicos con la generación del Visitor de ANTLR4 en este entorno.
+* **(Estado Actual de la Interpretación):** Actualmente, la fase de interpretación (traducción a JavaScript y ejecución) se encuentra en desarrollo y no está completamente funcional debido a problemas técnicos con la generación del Visitor de ANTLR4
 
 ## Contenido del Repositorio
 
@@ -30,7 +31,7 @@ El analizador toma como entrada código fuente escrito en el lenguaje SubC y rea
 
 1.  **Clonar el repositorio:**
     ```bash
-    git clone <URL_DE_TU_REPOSITORIO>
+    git clone https://github.com/Pilaar10/51337
     cd <nombre_de_tu_repositorio>
     cd proyecto-analizador
     ```
@@ -38,22 +39,6 @@ El analizador toma como entrada código fuente escrito en el lenguaje SubC y rea
 2.  **Instalar las dependencias (si es necesario):**
     ```bash
     npm install antlr4
-    ```
-    (Aunque ANTLR4 generalmente se usa como una herramienta de línea de comandos, si lo instalaste como dependencia del proyecto, este paso será necesario).
-
-3.  **Ejecutar el analizador:**
-
-    El analizador `index.mjs` toma como entrada un archivo de texto con código SubC. Puedes ejecutarlo de la siguiente manera, volviendo a la raíz del proyecto:
-
-    ```bash
-    cd ..
-    node proyecto-analizador/index.mjs ejemplo_correcto1.txt
-    ```
-
-    O puedes modificar el archivo `index.mjs` para que use un archivo de entrada predeterminado (`input.txt`) si lo prefieres, y luego simplemente ejecutar:
-
-    ```bash
-    node proyecto-analizador/index.mjs
     ```
 
     **Nota:** Asegúrate de que el archivo de entrada (`ejemplo_correcto1.txt` o el que elijas) exista en la misma ubicación desde donde ejecutas el comando o proporciona la ruta correcta al archivo.
