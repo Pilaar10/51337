@@ -1,0 +1,4 @@
+for(x=10;x>0;x--){
+  printf("cuenta regresiva");
+  break;
+}

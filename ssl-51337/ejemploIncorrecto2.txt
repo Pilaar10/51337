@@ -1,0 +1,3 @@
+fori=0;i<3;i++){
+  printf("sin paréntesis");
+}
